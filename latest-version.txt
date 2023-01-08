@@ -1,0 +1,2 @@
+FlexiMotion v1.0
+docs/changes/flexi-motion-v1-0

@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/flexi-motion/assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/flexi-motion/assets/img/favicon.ico" type="image/x-icon">
+        <title>FlexiMotion - API - FlexiMotion.Editor Namespace</title>
+        <link href="/flexi-motion/assets/css/highlight.css" rel="stylesheet">
+        <link href="/flexi-motion/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/flexi-motion/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/flexi-motion/assets/css/theme/theme.css" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
+        <link href="/flexi-motion/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/flexi-motion/assets/css/override.css" rel="stylesheet">
+        <script src="/flexi-motion/assets/js/jquery-2.2.3.min.js"></script>
+        <script src="/flexi-motion/assets/js/bootstrap.min.js"></script>        
+        <script src="/flexi-motion/assets/js/app.min.js"></script>         
+        <script src="/flexi-motion/assets/js/highlight.pack.js"></script>   
+        <script src="/flexi-motion/assets/js/jquery.slimscroll.min.js"></script>
+        <script src="/flexi-motion/assets/js/jquery.sticky-kit.min.js"></script>
+        <script src="/flexi-motion/assets/js/mermaid.min.js"></script>
+        <script src="/flexi-motion/assets/js/svg-pan-zoom.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="/flexi-motion/assets/js/html5shiv.min.js"></script>
+        <script src="/flexi-motion/assets/js/respond.min.js"></script>
+        <![endif]-->  
+
+        
+    </head>
+    <body class="hold-transition wyam layout-boxed  ">    
+        <div class="top-banner"></div>
+        <div class="wrapper with-container">
+            <!-- Header -->
+            <header class="main-header">   
+                     
+                <a href="/flexi-motion/" class="logo">
+                            <span>FlexiMotion</span>
+                </a>   
+                         
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
+                                        
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-down"></i>
+                        </button>
+                    </div>
+            
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                        <ul class="nav navbar-nav">                            
+                                    <li><a href="/flexi-motion/docs"><img src="/flexi-motion/images/docs.png" height="20px" width="7.5px" style="left:-5px"> Documentation</a></li>
+        <li><a href="/flexi-motion/docs/download"><img src="/flexi-motion/images/download.png" height="20px" width="20px" style="left:-7px"> Download</a></li>
+        <li><a href="/flexi-motion/docs/samples/benchmark"><img src="/flexi-motion/images/benchmark.png" height="20px" width="30px" style="left:-7px"> Benchmark</a></li>
+        <li><a href="/flexi-motion/docs/help"><img src="/flexi-motion/images/help.png" height="20px" width="10.625px" style="left:-4px"> Help</a></li>
+        <li><a href="/flexi-motion/api/FlexiMotion/FlexiMotion"><img src="/flexi-motion/images/api.png" height="20px" width="18.125px" style="left:-3px"> API v1.0</a></li>
+        <li><a href="https://kybernetik.com.au"><img src="/flexi-motion/images/kybernetik.png" height="20px" width="20px" style="left:-2px"> Other Assets</a></li>
+
+<li style="width:100%">
+<form class="search-form" name="search" action="/flexi-motion/search">
+<span><input class="search-input" id="search" name="q" type="text" placeholder="Search..."></span>
+<div class="search-button"><button type="submit"><i class="fa fa-search"></i></button></div>
+</form>
+</li> 
+                        </ul>       
+                    </div>
+                    <!-- /.navbar-collapse -->
+                
+                    <!-- Navbar Right Menu -->
+                </nav>
+            </header>
+            
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar ">
+                <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
+                    	
+	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#ClassTypes">Class Types</a></p>
+<p><a href="#StructTypes">Struct Types</a></p>
+<p><a href="#InterfaceTypes">Interface Types</a></p>
+<hr class="infobar-hidden">
+</div>
+
+                </section>
+                <section class="sidebar">    
+                                     
+                    	
+	    <script src="/flexi-motion/assets/js/lunr.min.js"></script>
+    <script src="/flexi-motion/assets/js/searchIndex.js"></script>
+    <div class="sidebar-form">
+        <div class="input-group">
+            <input type="text" name="search" id="search" class="form-control" placeholder="Search Types...">
+            <span class="input-group-btn">
+                <button class="btn btn-flat"><i class="fa fa-search"></i></button>
+            </span>
+        </div>
+    </div>
+    <div id="search-results">
+    </div>
+    <script>
+        function runSearch(query){
+            $("#search-results").empty();			
+            if( query.length < 2 ){
+                return;
+            }			
+            var results = searchModule.search("*" + query + "*");
+            var listHtml = "<ul class='sidebar-menu'>";	
+            listHtml += "<li class='header'>Type Results</li>";	
+            if(results.length == 0 ){
+                listHtml += "<li>No results found</li>";
+            } else {					
+                for(var i = 0; i < results.length; ++i){
+                    var res = results[i];
+                    listHtml += "<li><a href='" + res.url + "'>" + htmlEscape(res.title) + "</a></li>";
+                }				
+            }
+            listHtml += "</ul>";				
+            $("#search-results").append(listHtml);
+        }
+
+        $(document).ready(function(){
+            $("#search").on('input propertychange paste', function() {
+                runSearch($("#search").val());
+            });
+        });
+
+        function htmlEscape(html) {
+            return document.createElement('div')
+                .appendChild(document.createTextNode(html))
+                .parentNode
+                .innerHTML;
+        }
+    </script>
+	
+    <hr>
+
+                    <ul class="sidebar-menu">
+                        
+	<li class="header">Namespaces</li>   
+
+				<li class="treeview active">
+				<a href="/flexi-motion/api/FlexiMotion">FlexiMotion</a> <a href="#" class="expand"></a>
+				<ul class="treeview-menu">
+						<li class=" selected"><a href="/flexi-motion/api/FlexiMotion.Editor">FlexiMotion<wbr>.Editor</a></li>
+			<li><a href="/flexi-motion/api/FlexiMotion.Jobs">FlexiMotion<wbr>.Jobs</a></li>
+			<li><a href="/flexi-motion/api/FlexiMotion.Modifiers">FlexiMotion<wbr>.Modifiers</a></li>
+			<li><a href="/flexi-motion/api/FlexiMotion.Samples">FlexiMotion<wbr>.Samples</a></li>
+</ul></li>
+				<li class="treeview">
+				<a href="/flexi-motion/api/Unity">Unity</a> <a href="#" class="expand"></a>
+				<ul class="treeview-menu">
+						<li><a href="/flexi-motion/api/Unity.Burst">Unity<wbr>.Burst</a></li>
+</ul></li>      
+
+                    </ul>
+                            
+                </section>                
+            </aside>
+            
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                
+
+
+
+<section class="content-header">
+	<h1>FlexiMotion<wbr>.Editor <small>Namespace</small></h1>
+</section>
+<section class="content">
+	
+	
+	
+
+
+			<h1 id="ClassTypes">Class Types</h1>
+			<div class="box">
+				<div class="box-body no-padding table-responsive">
+					<table class="table table-striped table-hover two-cols">
+						<thead>
+							<tr>
+								<th>Class</th>
+									<th>Summary</th>
+							</tr>
+						</thead>
+							<tbody><tr>
+								<td><a href="/flexi-motion/api/FlexiMotion.Editor/CustomSceneGui">CustomSceneGui</a></td>
+									<td>[Editor-Only] A wrapper for <code class="cs">UnityEditor.SceneView.duringSceneGui</code>.</td>
+							</tr>
+							<tr>
+								<td><a href="/flexi-motion/api/FlexiMotion.Editor/EditableFieldDrawer">EditableFieldDrawer</a></td>
+									<td>[Editor-Only] A <code class="cs">UnityEditor.PropertyDrawer</code> which adds an "Edit" button to a field.</td>
+							</tr>
+							<tr>
+								<td><a href="/flexi-motion/api/FlexiMotion.Editor/FlexiMotionEditor">FlexiMotionEditor</a></td>
+									<td>[Editor-Only] A custom editor for <code class="cs">FlexiMotion.FlexiMotion</code> components.</td>
+							</tr>
+							<tr>
+								<td><a href="/flexi-motion/api/FlexiMotion.Editor/FlexiMotionReadMe">FlexiMotionReadMe</a></td>
+									<td>[Editor-Only] A welcome screen for <code class="cs">FlexiMotion.FlexiMotion</code>.</td>
+							</tr>
+							<tr>
+								<td><a href="/flexi-motion/api/FlexiMotion.Editor/FMEditorGUI">FMEditorGUI</a></td>
+									<td>[Editor-Only] GUI utilities used throughout <code class="cs">FlexiMotion.FlexiMotion</code>.</td>
+							</tr>
+							<tr>
+								<td><a href="/flexi-motion/api/FlexiMotion.Editor/FMEditorUtilities">FMEditorUtilities</a></td>
+									<td>[Editor-Only] Utilities used throughout <code class="cs">FlexiMotion.FlexiMotion</code>.</td>
+							</tr>
+							<tr>
+								<td><a href="/flexi-motion/api/FlexiMotion.Editor/FMGUI">FMGUI</a></td>
+									<td>[Editor-Only] GUI utilities used throughout <code class="cs">FlexiMotion.FlexiMotion</code>.</td>
+							</tr>
+							<tr>
+								<td><a href="/flexi-motion/api/FlexiMotion.Editor/JobSchedullerEditor">JobSchedullerEditor</a></td>
+									<td>[Editor-Only] A custom editor for <code class="cs">FlexiMotion.Jobs.JobScheduller</code> components.</td>
+							</tr>
+							<tr>
+								<td><a href="/flexi-motion/api/FlexiMotion.Editor/ReadMe">ReadMe</a></td>
+									<td>[Editor-Only] A welcome screen for an asset.</td>
+							</tr>
+							<tr>
+								<td><a href="/flexi-motion/api/FlexiMotion.Editor/SphereColliderDefinitionsDrawer">Sphere<wbr>Collider<wbr>Definitions<wbr>Drawer</a></td>
+									<td>[Editor-Only] A <code class="cs">UnityEditor.PropertyDrawer</code> for <code class="cs">FlexiMotion.Modifiers.SphereColliderDefinitions</code> fields.</td>
+							</tr>
+							<tr>
+								<td><a href="/flexi-motion/api/FlexiMotion.Editor/SphereColliderDefinitionsWindow">Sphere<wbr>Collider<wbr>Definitions<wbr>Window</a></td>
+									<td>An <code class="cs">FlexiMotion.Editor.TransformTreeWindow`2</code> for editing sphere colliders.</td>
+							</tr>
+							<tr>
+								<td><a href="/flexi-motion/api/FlexiMotion.Editor/SphereColliderHandle">SphereColliderHandle</a></td>
+									<td>[Editor-Only]
+    A custom transform gizmo for sphere colliders because they don't have an actual <code class="cs">UnityEngine.Transform</code>.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/flexi-motion/api/FlexiMotion.Editor/SphereCollidersModifierEditor">Sphere<wbr>Colliders<wbr>Modifier<wbr>Editor</a></td>
+									<td>[Editor-Only] A custom editor for <code class="cs">FlexiMotion.Modifiers.SphereCollidersModifier</code> components.</td>
+							</tr>
+							<tr>
+								<td><a href="/flexi-motion/api/FlexiMotion.Editor/SphereColliderVisualiser">Sphere<wbr>Collider<wbr>Visualiser</a></td>
+									<td>A <code class="cs">FlexiMotion.Editor.SphereVisualiser</code> for <code class="cs">FlexiMotion.Modifiers.SphereColliderDefinitions</code>.</td>
+							</tr>
+							<tr>
+								<td><a href="/flexi-motion/api/FlexiMotion.Editor/SphereVisualiser">SphereVisualiser</a></td>
+									<td>A <code class="cs">FlexiMotion.Editor.CustomSceneGui</code> for spheres.</td>
+							</tr>
+							<tr>
+								<td><a href="/flexi-motion/api/FlexiMotion.Editor/SpringDefinitionsDrawer">Spring<wbr>Definitions<wbr>Drawer</a></td>
+									<td>[Editor-Only] A <code class="cs">UnityEditor.PropertyDrawer</code> for <code class="cs">FlexiMotion.SpringDefinitions</code> fields.</td>
+							</tr>
+							<tr>
+								<td><a href="/flexi-motion/api/FlexiMotion.Editor/SpringDefinitionsWindow">Spring<wbr>Definitions<wbr>Window</a></td>
+									<td>An <code class="cs">FlexiMotion.Editor.TransformTreeWindow`2</code> for editing spring definitions.</td>
+							</tr>
+							<tr>
+								<td><a href="/flexi-motion/api/FlexiMotion.Editor/SpringVisualiser">SpringVisualiser</a></td>
+									<td>A <code class="cs">FlexiMotion.Editor.SphereVisualiser</code> for <code class="cs">FlexiMotion.SpringDefinitions</code>.</td>
+							</tr>
+							<tr>
+								<td><a href="/flexi-motion/api/FlexiMotion.Editor/TransformTreeView">TransformTreeView</a></td>
+									<td>A <code class="cs">UnityEditor.IMGUI.Controls.TreeView</code> for displaying <code class="cs">UnityEngine.Transform</code>s alongside other data.</td>
+							</tr>
+							<tr>
+								<td><a href="/flexi-motion/api/FlexiMotion.Editor/TransformTreeWindow_2">TransformTreeWindow</a><wbr>&lt;<a href="/flexi-motion/api/FlexiMotion.Editor/TransformTreeWindow_2#typeparam-TTarget">TTarget</a>, <wbr><a href="/flexi-motion/api/FlexiMotion.Editor/TransformTreeWindow_2#typeparam-TDefinition">TDefinition</a>&gt;<wbr></td>
+									<td></td>
+							</tr>
+					</tbody></table>
+				</div>
+			</div>
+		
+
+			<h1 id="StructTypes">Struct Types</h1>
+			<div class="box">
+				<div class="box-body no-padding table-responsive">
+					<table class="table table-striped table-hover two-cols">
+						<thead>
+							<tr>
+								<th>Struct</th>
+									<th>Summary</th>
+							</tr>
+						</thead>
+							<tbody><tr>
+								<td><a href="/flexi-motion/api/FlexiMotion.Editor/SphereHandle">SphereHandle</a></td>
+									<td>A wrapper for drawing spheres in the scene view.</td>
+							</tr>
+					</tbody></table>
+				</div>
+			</div>
+		
+
+			<h1 id="InterfaceTypes">Interface Types</h1>
+			<div class="box">
+				<div class="box-body no-padding table-responsive">
+					<table class="table table-striped table-hover two-cols">
+						<thead>
+							<tr>
+								<th>Interface</th>
+									<th>Summary</th>
+							</tr>
+						</thead>
+							<tbody><tr>
+								<td><a href="/flexi-motion/api/FlexiMotion.Editor/ITransformTreeViewSource">I<wbr>Transform<wbr>Tree<wbr>View<wbr>Source</a></td>
+									<td>An object that provides data to a <code class="cs">FlexiMotion.Editor.TransformTreeView</code>.</td>
+							</tr>
+					</tbody></table>
+				</div>
+			</div>
+		
+
+	
+</section>
+                
+            </div>           
+            
+            <!-- Footer -->
+            <footer class="main-footer">
+            </footer>
+            
+        </div>
+        <div class="wrapper bottom-wrapper">
+            <footer class="bottom-footer">
+                <strong><div style="text-align:left; display:flex">
+
+<div>
+<p>Documentation</p>
+<p><a href="/flexi-motion/docs/samples">Samples</a></p>
+<p><a href="/flexi-motion/docs/manual">User Manual</a></p>
+<p><a href="/flexi-motion/docs/changes">Change Log</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Download</p>
+<p><a href="/flexi-motion/docs/download">Free Demo</a></p>
+<p><a href="/flexi-motion/redirect/asset-store">Asset Store</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Contact</p>
+<p><a href="https://github.com/KybernetikGames/flexi-motion/issues">Github Issues</a></p>
+<p><a href="/flexi-motion/redirect/forum">Unity Forum</a></p>
+<p><a href="mailto:mail@kybernetik.com.au?subject=FlexiMotion">Email</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p><a href="/">Other Assets</a></p>
+<p><a href="/animancer">Animancer</a></p>
+<p><a href="/inspector-gadgets">Inspector Gadgets</a></p>
+<p><a href="/weaver">Weaver</a></p>
+</div>
+
+</div></strong>
+<script src="/flexi-motion/assets/js/pngif.js"></script>
+            </footer>
+        </div>
+        <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <script>           
+            // Close the sidebar if we select an anchor link
+            $(".main-sidebar a[href^='#']:not('.expand')").click(function(){
+                $(document.body).removeClass('sidebar-open');
+            });
+            
+            $(document).ready(function() {
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });     
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-responsive');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});			                          
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+                    
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+                
+                $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });  
+            });
+
+            hljs.initHighlightingOnLoad();
+
+            // Back to top
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(1000);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(1000);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });
+        </script>
+    
+</body></html>
