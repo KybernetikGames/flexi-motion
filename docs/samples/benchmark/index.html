@@ -60,7 +60,7 @@
         <li><a href="/flexi-motion/docs/download"><img src="/flexi-motion/images/download.png" height="20px" width="20px" style="left:-7px"> Download</a></li>
         <li class="active"><a href="/flexi-motion/docs/samples/benchmark"><img src="/flexi-motion/images/benchmark.png" height="20px" width="30px" style="left:-7px"> Benchmark</a></li>
         <li><a href="/flexi-motion/docs/help"><img src="/flexi-motion/images/help.png" height="20px" width="10.625px" style="left:-4px"> Help</a></li>
-        <li><a href="/flexi-motion/api/FlexiMotion/FlexiMotion"><img src="/flexi-motion/images/api.png" height="20px" width="18.125px" style="left:-3px"> API v1.0</a></li>
+        <li><a href="/flexi-motion/api/FlexiMotion/FlexiMotionComponent"><img src="/flexi-motion/images/api.png" height="20px" width="18.125px" style="left:-3px"> API v1.1</a></li>
         <li><a href="https://kybernetik.com.au"><img src="/flexi-motion/images/kybernetik.png" height="20px" width="20px" style="left:-2px"> Other Assets</a></li>
 
 <li style="width:100%">
@@ -116,7 +116,8 @@
                     <a href="/flexi-motion/docs/changes">Change Log</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
-                <li><a href="/flexi-motion/docs/changes/flexi-motion-v1-0">FlexiMotion v1.0</a></li>
+                <li><a href="/flexi-motion/docs/changes/flexi-motion-v1-1">FlexiMotion v1.1</a></li>
+                <li><a href="/flexi-motion/docs/changes/flexi-motion-v1-0">Flexi Motion V1 0</a></li>
 
                     </ul>
                 </li>
@@ -137,7 +138,7 @@
 		</section>
 	<section class="content">
 		<p><img src="results.png" class="img-responsive"></p>
-<p>This sample measures the average frame rate of <code><a href="/flexi-motion/api/FlexiMotion/FlexiMotion">FlexiMotion</a></code> (or another system) over time.</p>
+<p>This sample measures the average frame rate of <code>FlexiMotion</code> (or another system) over time.</p>
 <p><img src="benchmark.png" class="pngif img-responsive"></p>
 <p>It works by instantiating a number of copies of a given prefab, waiting for a short delay for the performance to stabilize, and then counting the number of updates that occur over a period of time.</p>
 <p>FlexiMotion only includes one sample character prefab, but you can assign any prefab you want to test and the <a href="#try-it-yourself">Try it Yourself</a> section has a package to help you compare it against any other systems you have.</p>
@@ -166,7 +167,7 @@
 <p>You can run this benchmark yourself by downloading the <a href="../../download">Free FlexiMotion Demo</a>. Note that as mentioned above, the Demo is significantly slower than the Full version (though still much faster than other systems).</p>
 <p><a href="FlexiMotion.Compatibility.unitypackage"><img src="compatibility-assets.png" class="img-responsive img-right"></a></p>
 <p>If you have any of the other systems shown in the graph, you can download the <a href="FlexiMotion.Compatibility.unitypackage"><strong>FlexiMotion.Compatibility.unitypackage</strong></a> from here. It contains the prefabs used to generate the results for the graph.</p>
-<p>The compatibility package also contains scripts to easily convert the data from a <code><a href="/flexi-motion/api/FlexiMotion/FlexiMotion">FlexiMotion</a></code> component to a rough equivalent in each of the other systems.</p>
+<p>The compatibility package also contains scripts to easily convert the data from a <code>FlexiMotion</code> component to a rough equivalent in each of the other systems.</p>
 <ol>
 <li>Start by importing FlexiMotion and any of the other systems you have available into your project.</li>
 <li>Download and import the <a href="FlexiMotion.Compatibility.unitypackage"><strong>FlexiMotion.Compatibility.unitypackage</strong></a>.</li>
@@ -195,7 +196,7 @@
 </tbody>
 </table>
 <ol start="4">
-<li>Then you can go to any object or prefab with a <code><a href="/flexi-motion/api/FlexiMotion/FlexiMotion">FlexiMotion</a></code> component and use its Context Menu Functions to copy the data to another system. This will add the appropriate components from that system and configure them in a similar manner.</li>
+<li>Then you can go to any object or prefab with a <code>FlexiMotion</code> component and use its Context Menu Functions to copy the data to another system. This will add the appropriate components from that system and configure them in a similar manner.</li>
 </ol>
 <p><img src="context-menu-functions.png" class="pngif img-responsive"></p>
 <p>If you have any suggestions for how the conversion scripts could be improved to give better performance in the other systems or behaviour closer to FlexiMotion, please use any of the <a href="../../help">contact methods listed on the Help page</a>.</p>

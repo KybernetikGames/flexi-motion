@@ -60,7 +60,7 @@
         <li><a href="/flexi-motion/docs/download"><img src="/flexi-motion/images/download.png" height="20px" width="20px" style="left:-7px"> Download</a></li>
         <li><a href="/flexi-motion/docs/samples/benchmark"><img src="/flexi-motion/images/benchmark.png" height="20px" width="30px" style="left:-7px"> Benchmark</a></li>
         <li><a href="/flexi-motion/docs/help"><img src="/flexi-motion/images/help.png" height="20px" width="10.625px" style="left:-4px"> Help</a></li>
-        <li><a href="/flexi-motion/api/FlexiMotion/FlexiMotion"><img src="/flexi-motion/images/api.png" height="20px" width="18.125px" style="left:-3px"> API v1.0</a></li>
+        <li><a href="/flexi-motion/api/FlexiMotion/FlexiMotionComponent"><img src="/flexi-motion/images/api.png" height="20px" width="18.125px" style="left:-3px"> API v1.1</a></li>
         <li><a href="https://kybernetik.com.au"><img src="/flexi-motion/images/kybernetik.png" height="20px" width="20px" style="left:-2px"> Other Assets</a></li>
 
 <li style="width:100%">
@@ -184,7 +184,7 @@
 	
 	
 		<h1 id="Summary">Summary</h1>
-	<div class="lead">An object which modifies the behaviour of <code class="cs">FlexiMotion.FlexiMotion</code>.</div>
+	<div class="lead">An object which modifies the behaviour of <code class="cs">FlexiMotion.FlexiMotionComponent</code>.</div>
 
 		<div class="panel panel-default">
   			<div class="panel-body">
@@ -203,14 +203,14 @@
 								<dt>Implementing Types</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/DistanceBasedUpdateRateModifier">Distance<wbr>Based<wbr>Update<wbr>Rate<wbr>Modifier</a></li>								
-											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/SphereCollidersModifier">Sphere<wbr>Colliders<wbr>Modifier</a></li>								
-											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/WindModifier">WindModifier</a></li>								
-											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/ScaleModifier">ScaleModifier</a></li>								
 											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/PreWarmModifier">PreWarmModifier</a></li>								
+											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/ScaleModifier">ScaleModifier</a></li>								
+											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/SphereCollidersModifier">Sphere<wbr>Colliders<wbr>Modifier</a></li>								
 											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/AccelerationModifier">AccelerationModifier</a></li>								
 											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/FlexiMotionModifier">FlexiMotionModifier</a></li>								
+											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/DistanceBasedUpdateRateModifier">Distance<wbr>Based<wbr>Update<wbr>Rate<wbr>Modifier</a></li>								
 											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/SimulationRootModifier">Simulation<wbr>Root<wbr>Modifier</a></li>								
+											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/WindModifier">WindModifier</a></li>								
 									</ul>
 								</dd>				
 						</dl>
@@ -220,22 +220,22 @@
 							graph BT
 	Type["IFlexiMotionModifier"]
 class Type type-node
-	Implementing0["DistanceBasedUpdateRateModifier"]-.-&gt;Type
-	click Implementing0 "/flexi-motion/api/FlexiMotion.Modifiers/DistanceBasedUpdateRateModifier"
-	Implementing1["SphereCollidersModifier"]-.-&gt;Type
-	click Implementing1 "/flexi-motion/api/FlexiMotion.Modifiers/SphereCollidersModifier"
-	Implementing2["WindModifier"]-.-&gt;Type
-	click Implementing2 "/flexi-motion/api/FlexiMotion.Modifiers/WindModifier"
-	Implementing3["ScaleModifier"]-.-&gt;Type
-	click Implementing3 "/flexi-motion/api/FlexiMotion.Modifiers/ScaleModifier"
-	Implementing4["PreWarmModifier"]-.-&gt;Type
-	click Implementing4 "/flexi-motion/api/FlexiMotion.Modifiers/PreWarmModifier"
-	Implementing5["AccelerationModifier"]-.-&gt;Type
-	click Implementing5 "/flexi-motion/api/FlexiMotion.Modifiers/AccelerationModifier"
-	Implementing6["FlexiMotionModifier"]-.-&gt;Type
-	click Implementing6 "/flexi-motion/api/FlexiMotion.Modifiers/FlexiMotionModifier"
-	Implementing7["SimulationRootModifier"]-.-&gt;Type
-	click Implementing7 "/flexi-motion/api/FlexiMotion.Modifiers/SimulationRootModifier"
+	Implementing0["PreWarmModifier"]-.-&gt;Type
+	click Implementing0 "/flexi-motion/api/FlexiMotion.Modifiers/PreWarmModifier"
+	Implementing1["ScaleModifier"]-.-&gt;Type
+	click Implementing1 "/flexi-motion/api/FlexiMotion.Modifiers/ScaleModifier"
+	Implementing2["SphereCollidersModifier"]-.-&gt;Type
+	click Implementing2 "/flexi-motion/api/FlexiMotion.Modifiers/SphereCollidersModifier"
+	Implementing3["AccelerationModifier"]-.-&gt;Type
+	click Implementing3 "/flexi-motion/api/FlexiMotion.Modifiers/AccelerationModifier"
+	Implementing4["FlexiMotionModifier"]-.-&gt;Type
+	click Implementing4 "/flexi-motion/api/FlexiMotion.Modifiers/FlexiMotionModifier"
+	Implementing5["DistanceBasedUpdateRateModifier"]-.-&gt;Type
+	click Implementing5 "/flexi-motion/api/FlexiMotion.Modifiers/DistanceBasedUpdateRateModifier"
+	Implementing6["SimulationRootModifier"]-.-&gt;Type
+	click Implementing6 "/flexi-motion/api/FlexiMotion.Modifiers/SimulationRootModifier"
+	Implementing7["WindModifier"]-.-&gt;Type
+	click Implementing7 "/flexi-motion/api/FlexiMotion.Modifiers/WindModifier"
 
 						</div>
 					</div>
@@ -268,7 +268,7 @@ class Type type-node
 						</thead>
 							<tbody><tr>
 								<td><a href="/flexi-motion/api/FlexiMotion.Modifiers/IFlexiMotionModifier/A8F6FE90">Target</a></td>
-								<td><a href="/flexi-motion/api/FlexiMotion/IFlexiMotion">IFlexiMotion</a></td>
+								<td><a href="/flexi-motion/api/FlexiMotion/IFlexiMotionComponent">I<wbr>Flexi<wbr>Motion<wbr>Component</a></td>
 								<td>
 									<div>The simulation that will be modified.</div>
 								</td>

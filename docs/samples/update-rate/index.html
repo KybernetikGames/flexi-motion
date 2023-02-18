@@ -60,7 +60,7 @@
         <li><a href="/flexi-motion/docs/download"><img src="/flexi-motion/images/download.png" height="20px" width="20px" style="left:-7px"> Download</a></li>
         <li><a href="/flexi-motion/docs/samples/benchmark"><img src="/flexi-motion/images/benchmark.png" height="20px" width="30px" style="left:-7px"> Benchmark</a></li>
         <li><a href="/flexi-motion/docs/help"><img src="/flexi-motion/images/help.png" height="20px" width="10.625px" style="left:-4px"> Help</a></li>
-        <li><a href="/flexi-motion/api/FlexiMotion/FlexiMotion"><img src="/flexi-motion/images/api.png" height="20px" width="18.125px" style="left:-3px"> API v1.0</a></li>
+        <li><a href="/flexi-motion/api/FlexiMotion/FlexiMotionComponent"><img src="/flexi-motion/images/api.png" height="20px" width="18.125px" style="left:-3px"> API v1.1</a></li>
         <li><a href="https://kybernetik.com.au"><img src="/flexi-motion/images/kybernetik.png" height="20px" width="20px" style="left:-2px"> Other Assets</a></li>
 
 <li style="width:100%">
@@ -113,7 +113,8 @@
                     <a href="/flexi-motion/docs/changes">Change Log</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
-                <li><a href="/flexi-motion/docs/changes/flexi-motion-v1-0">FlexiMotion v1.0</a></li>
+                <li><a href="/flexi-motion/docs/changes/flexi-motion-v1-1">FlexiMotion v1.1</a></li>
+                <li><a href="/flexi-motion/docs/changes/flexi-motion-v1-0">Flexi Motion V1 0</a></li>
 
                     </ul>
                 </li>
@@ -139,10 +140,10 @@
 <p>Here's a breakdown of what's happening in that video:</p>
 <ul>
 <li>According to the information panel in the bottom right, the camera starts about 1.8m away from the character.</li>
-<li>The <code>Near Range</code> is <code>3</code> and the camera is closer than that so the update rate at the full 50 (defined in the <code><a href="/flexi-motion/api/FlexiMotion/FlexiMotion">FlexiMotion</a></code> component).</li>
+<li>The <code>Near Range</code> is <code>3</code> and the camera is closer than that so the update rate at the full 50 (defined in the <code>FlexiMotion</code> component).</li>
 <li>When the camera zooms out past <code>3</code>, the update rate gets lower.</li>
 <li>As the distance approaches the <code>Far Range</code> of <code>15</code>, the update rate approaches the minimum value (<code>Minimum Update Rate Multiplyer x Updates Per Second</code>).</li>
-<li>Once the distance exceeds <code>15</code>, the <code><a href="/flexi-motion/api/FlexiMotion/FlexiMotion">FlexiMotion</a></code> component is disabled entirely.</li>
+<li>Once the distance exceeds <code>15</code>, the <code>FlexiMotion</code> component is disabled entirely.</li>
 </ul>
 <p>Also note that the character's <a href="../../setup">Action On Disable</a> is set to <code>Recenter</code> to avoid causing a violent jump if the character moves before the simulation is re-enabled.</p>
 <p><img src="inspector.png" class="img-responsive"></p>

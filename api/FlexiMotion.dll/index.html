@@ -60,7 +60,7 @@
         <li><a href="/flexi-motion/docs/download"><img src="/flexi-motion/images/download.png" height="20px" width="20px" style="left:-7px"> Download</a></li>
         <li><a href="/flexi-motion/docs/samples/benchmark"><img src="/flexi-motion/images/benchmark.png" height="20px" width="30px" style="left:-7px"> Benchmark</a></li>
         <li><a href="/flexi-motion/docs/help"><img src="/flexi-motion/images/help.png" height="20px" width="10.625px" style="left:-4px"> Help</a></li>
-        <li><a href="/flexi-motion/api/FlexiMotion/FlexiMotion"><img src="/flexi-motion/images/api.png" height="20px" width="18.125px" style="left:-3px"> API v1.0</a></li>
+        <li><a href="/flexi-motion/api/FlexiMotion/FlexiMotionComponent"><img src="/flexi-motion/images/api.png" height="20px" width="18.125px" style="left:-3px"> API v1.1</a></li>
         <li><a href="https://kybernetik.com.au"><img src="/flexi-motion/images/kybernetik.png" height="20px" width="20px" style="left:-2px"> Other Assets</a></li>
 
 <li style="width:100%">
@@ -185,10 +185,6 @@
 									<td>A simble benchmark which records the average frame rate of an instances prefab over time.</td>
 							</tr>
 							<tr>
-								<td><a href="/flexi-motion/api/Unity.Burst/BurstCompileAttribute">Burst<wbr>Compile<wbr>Attribute</a></td>
-									<td></td>
-							</tr>
-							<tr>
 								<td><a href="/flexi-motion/api/FlexiMotion/ComponentSingleton_1">ComponentSingleton</a><wbr>&lt;<a href="/flexi-motion/api/FlexiMotion/ComponentSingleton_1#typeparam-T">T</a>&gt;<wbr></td>
 									<td>A simple singleton for <code class="cs">UnityEngine.Component</code> types.</td>
 							</tr>
@@ -212,10 +208,10 @@
 									<td>[Editor-Only] A <code class="cs">UnityEditor.PropertyDrawer</code> which adds an "Edit" button to a field.</td>
 							</tr>
 							<tr>
-								<td><a href="/flexi-motion/api/FlexiMotion/FlexiMotion">FlexiMotion</a></td>
+								<td><a href="/flexi-motion/api/FlexiMotion/FlexiMotionComponent">FlexiMotionComponent</a></td>
 									<td>
-    The main component in FlexiMotion which holds the core <code class="cs">FlexiMotion.FlexiMotionDefinition</code> and turns it into
-    a <code class="cs">FlexiMotion.FlexiMotionRuntime</code> to run the simulation.
+    The main component in <code class="cs">FlexiMotion.FlexiMotionComponent</code> which holds the core <code class="cs">FlexiMotion.FlexiMotionDefinition</code> and
+    turns it into a <code class="cs">FlexiMotion.FlexiMotionRuntime</code> to run the simulation.
     </td>
 							</tr>
 							<tr>
@@ -226,15 +222,15 @@
 							</tr>
 							<tr>
 								<td><a href="/flexi-motion/api/FlexiMotion.Editor/FlexiMotionEditor">FlexiMotionEditor</a></td>
-									<td>[Editor-Only] A custom editor for <code class="cs">FlexiMotion.FlexiMotion</code> components.</td>
+									<td>[Editor-Only] A custom editor for <code class="cs">FlexiMotion.FlexiMotionComponent</code> components.</td>
 							</tr>
 							<tr>
 								<td><a href="/flexi-motion/api/FlexiMotion.Modifiers/FlexiMotionModifier">FlexiMotionModifier</a></td>
-									<td>A component which modifies the behaviour of <code class="cs">FlexiMotion.FlexiMotion</code>.</td>
+									<td>A component which modifies the behaviour of <code class="cs">FlexiMotion.FlexiMotionComponent</code>.</td>
 							</tr>
 							<tr>
 								<td><a href="/flexi-motion/api/FlexiMotion.Editor/FlexiMotionReadMe">FlexiMotionReadMe</a></td>
-									<td>[Editor-Only] A welcome screen for <code class="cs">FlexiMotion.FlexiMotion</code>.</td>
+									<td>[Editor-Only] A welcome screen for <code class="cs">FlexiMotion.FlexiMotionComponent</code>.</td>
 							</tr>
 							<tr>
 								<td><a href="/flexi-motion/api/FlexiMotion/FlexiMotionRuntime">FlexiMotionRuntime</a></td>
@@ -249,19 +245,19 @@
 							</tr>
 							<tr>
 								<td><a href="/flexi-motion/api/FlexiMotion.Editor/FMEditorGUI">FMEditorGUI</a></td>
-									<td>[Editor-Only] GUI utilities used throughout <code class="cs">FlexiMotion.FlexiMotion</code>.</td>
+									<td>[Editor-Only] GUI utilities used throughout <code class="cs">FlexiMotion.FlexiMotionComponent</code>.</td>
 							</tr>
 							<tr>
 								<td><a href="/flexi-motion/api/FlexiMotion.Editor/FMEditorUtilities">FMEditorUtilities</a></td>
-									<td>[Editor-Only] Utilities used throughout <code class="cs">FlexiMotion.FlexiMotion</code>.</td>
+									<td>[Editor-Only] Utilities used throughout <code class="cs">FlexiMotion.FlexiMotionComponent</code>.</td>
 							</tr>
 							<tr>
 								<td><a href="/flexi-motion/api/FlexiMotion.Editor/FMGUI">FMGUI</a></td>
-									<td>[Editor-Only] GUI utilities used throughout <code class="cs">FlexiMotion.FlexiMotion</code>.</td>
+									<td>[Editor-Only] GUI utilities used throughout <code class="cs">FlexiMotion.FlexiMotionComponent</code>.</td>
 							</tr>
 							<tr>
 								<td><a href="/flexi-motion/api/FlexiMotion/FMStrings">FMStrings</a></td>
-									<td>Strings used throughout <code class="cs">FlexiMotion.FlexiMotion</code>.</td>
+									<td>Strings used throughout <code class="cs">FlexiMotion.FlexiMotionComponent</code>.</td>
 							</tr>
 							<tr>
 								<td><a href="/flexi-motion/api/FlexiMotion/DocsURLs">FMStrings<wbr>.DocsURLs</a></td>
@@ -269,11 +265,11 @@
 							</tr>
 							<tr>
 								<td><a href="/flexi-motion/api/FlexiMotion/Tooltips">FMStrings<wbr>.Tooltips</a></td>
-									<td>Tooltips used throughout <code class="cs">FlexiMotion.FlexiMotion</code>.</td>
+									<td>Tooltips used throughout <code class="cs">FlexiMotion.FlexiMotionComponent</code>.</td>
 							</tr>
 							<tr>
 								<td><a href="/flexi-motion/api/FlexiMotion/FMUtilities">FMUtilities</a></td>
-									<td>Utilities used throughout <code class="cs">FlexiMotion.FlexiMotion</code>.</td>
+									<td>Utilities used throughout <code class="cs">FlexiMotion.FlexiMotionComponent</code>.</td>
 							</tr>
 							<tr>
 								<td><a href="/flexi-motion/api/FlexiMotion.Modifiers/JobModifierGroup">JobModifierGroup</a></td>
@@ -443,7 +439,7 @@
 						</thead>
 							<tbody><tr>
 								<td><a href="/flexi-motion/api/FlexiMotion/ActionOnDisable">ActionOnDisable</a></td>
-									<td>An action to perform when disabling a <code class="cs">FlexiMotion.FlexiMotion</code> component.</td>
+									<td>An action to perform when disabling a <code class="cs">FlexiMotion.FlexiMotionComponent</code> component.</td>
 							</tr>
 					</tbody></table>
 				</div>
@@ -469,15 +465,15 @@
 									<td>Interface for objects that can be copied.</td>
 							</tr>
 							<tr>
-								<td><a href="/flexi-motion/api/FlexiMotion/IFlexiMotion">IFlexiMotion</a></td>
+								<td><a href="/flexi-motion/api/FlexiMotion/IFlexiMotionComponent">I<wbr>Flexi<wbr>Motion<wbr>Component</a></td>
 									<td>
-    The main component in FlexiMotion which holds the core <code class="cs">FlexiMotion.FlexiMotionDefinition</code> and turns it into
-    a <code class="cs">FlexiMotion.FlexiMotionRuntime</code> to run the simulation.
+    The main component in <code class="cs">FlexiMotion.FlexiMotionComponent</code> which holds the core <code class="cs">FlexiMotion.FlexiMotionDefinition</code> and
+    turns it into a <code class="cs">FlexiMotion.FlexiMotionRuntime</code> to run the simulation.
     </td>
 							</tr>
 							<tr>
 								<td><a href="/flexi-motion/api/FlexiMotion.Modifiers/IFlexiMotionModifier">IFlexiMotionModifier</a></td>
-									<td>An object which modifies the behaviour of <code class="cs">FlexiMotion.FlexiMotion</code>.</td>
+									<td>An object which modifies the behaviour of <code class="cs">FlexiMotion.FlexiMotionComponent</code>.</td>
 							</tr>
 							<tr>
 								<td><a href="/flexi-motion/api/FlexiMotion.Jobs/IJobSource">IJobSource</a></td>
