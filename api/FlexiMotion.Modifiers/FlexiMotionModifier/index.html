@@ -60,7 +60,7 @@
         <li><a href="/flexi-motion/docs/download"><img src="/flexi-motion/images/download.png" height="20px" width="20px" style="left:-7px"> Download</a></li>
         <li><a href="/flexi-motion/docs/samples/benchmark"><img src="/flexi-motion/images/benchmark.png" height="20px" width="30px" style="left:-7px"> Benchmark</a></li>
         <li><a href="/flexi-motion/docs/help"><img src="/flexi-motion/images/help.png" height="20px" width="10.625px" style="left:-4px"> Help</a></li>
-        <li><a href="/flexi-motion/api/FlexiMotion/FlexiMotionComponent"><img src="/flexi-motion/images/api.png" height="20px" width="18.125px" style="left:-3px"> API v1.1</a></li>
+        <li><a href="/flexi-motion/api/FlexiMotion/FlexiMotionComponent"><img src="/flexi-motion/images/api.png" height="20px" width="18.125px" style="left:-3px"> API v1.2</a></li>
         <li><a href="https://kybernetik.com.au"><img src="/flexi-motion/images/kybernetik.png" height="20px" width="20px" style="left:-2px"> Other Assets</a></li>
 
 <li style="width:100%">
@@ -162,6 +162,7 @@
 				<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/ScaleModifier">ScaleModifier</a></li>
 				<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/SimulationRootModifier">Simulation<wbr>Root<wbr>Modifier</a></li>
 				<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/SphereColliderDefinitions">Sphere<wbr>Collider<wbr>Definitions</a></li>
+				<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/SphereColliderDefinitionsBuilder">Sphere<wbr>Collider<wbr>Definitions<wbr>Builder</a></li>
 				<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/SphereCollidersModifier">Sphere<wbr>Colliders<wbr>Modifier</a></li>
 				<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/WindModifier">WindModifier</a></li>
 			<li class="header">Interface Types</li>
@@ -217,12 +218,12 @@
 								<dt>Derived Types</dt>
 								<dd>
 									<ul class="list-unstyled">
+											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/SimulationRootModifier">Simulation<wbr>Root<wbr>Modifier</a></li>								
+											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/AccelerationModifier">AccelerationModifier</a></li>								
+											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/SphereCollidersModifier">Sphere<wbr>Colliders<wbr>Modifier</a></li>								
+											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/DistanceBasedUpdateRateModifier">Distance<wbr>Based<wbr>Update<wbr>Rate<wbr>Modifier</a></li>								
 											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/PreWarmModifier">PreWarmModifier</a></li>								
 											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/ScaleModifier">ScaleModifier</a></li>								
-											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/SphereCollidersModifier">Sphere<wbr>Colliders<wbr>Modifier</a></li>								
-											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/AccelerationModifier">AccelerationModifier</a></li>								
-											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/DistanceBasedUpdateRateModifier">Distance<wbr>Based<wbr>Update<wbr>Rate<wbr>Modifier</a></li>								
-											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/SimulationRootModifier">Simulation<wbr>Root<wbr>Modifier</a></li>								
 									</ul>
 								</dd>			
 							
@@ -236,18 +237,18 @@
 	click Interface0 "/flexi-motion/api/FlexiMotion.Modifiers/IFlexiMotionModifier"
 	Type["FlexiMotionModifier"]
 class Type type-node
-	Derived0["PreWarmModifier"]--&gt;Type
-	click Derived0 "/flexi-motion/api/FlexiMotion.Modifiers/PreWarmModifier"
-	Derived1["ScaleModifier"]--&gt;Type
-	click Derived1 "/flexi-motion/api/FlexiMotion.Modifiers/ScaleModifier"
+	Derived0["SimulationRootModifier"]--&gt;Type
+	click Derived0 "/flexi-motion/api/FlexiMotion.Modifiers/SimulationRootModifier"
+	Derived1["AccelerationModifier"]--&gt;Type
+	click Derived1 "/flexi-motion/api/FlexiMotion.Modifiers/AccelerationModifier"
 	Derived2["SphereCollidersModifier"]--&gt;Type
 	click Derived2 "/flexi-motion/api/FlexiMotion.Modifiers/SphereCollidersModifier"
-	Derived3["AccelerationModifier"]--&gt;Type
-	click Derived3 "/flexi-motion/api/FlexiMotion.Modifiers/AccelerationModifier"
-	Derived4["DistanceBasedUpdateRateModifier"]--&gt;Type
-	click Derived4 "/flexi-motion/api/FlexiMotion.Modifiers/DistanceBasedUpdateRateModifier"
-	Derived5["SimulationRootModifier"]--&gt;Type
-	click Derived5 "/flexi-motion/api/FlexiMotion.Modifiers/SimulationRootModifier"
+	Derived3["DistanceBasedUpdateRateModifier"]--&gt;Type
+	click Derived3 "/flexi-motion/api/FlexiMotion.Modifiers/DistanceBasedUpdateRateModifier"
+	Derived4["PreWarmModifier"]--&gt;Type
+	click Derived4 "/flexi-motion/api/FlexiMotion.Modifiers/PreWarmModifier"
+	Derived5["ScaleModifier"]--&gt;Type
+	click Derived5 "/flexi-motion/api/FlexiMotion.Modifiers/ScaleModifier"
 
 						</div>
 					</div>
