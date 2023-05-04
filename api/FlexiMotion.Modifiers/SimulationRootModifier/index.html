@@ -207,6 +207,7 @@
 								<dd>
 									<ul class="list-unstyled">
 											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/IFlexiMotionModifier">IFlexiMotionModifier</a></li>								
+											<li><a href="/flexi-motion/api/FlexiMotion/IOnValidate">IOnValidate</a></li>								
 											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/IOnReEnable">JobModifierGroup<wbr>.IOnReEnable</a></li>								
 											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/IPreUpdate">JobModifierGroup<wbr>.IPreUpdate</a></li>								
 											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/IPostUpdate">JobModifierGroup<wbr>.IPostUpdate</a></li>								
@@ -232,12 +233,14 @@
 	Base0--&gt;Base1["MonoBehaviour"]
 	Type-.-&gt;Interface0["IFlexiMotionModifier"]
 	click Interface0 "/flexi-motion/api/FlexiMotion.Modifiers/IFlexiMotionModifier"
-	Type-.-&gt;Interface1["JobModifierGroup.IOnReEnable"]
-	click Interface1 "/flexi-motion/api/FlexiMotion.Modifiers/IOnReEnable"
-	Type-.-&gt;Interface2["JobModifierGroup.IPreUpdate"]
-	click Interface2 "/flexi-motion/api/FlexiMotion.Modifiers/IPreUpdate"
-	Type-.-&gt;Interface3["JobModifierGroup.IPostUpdate"]
-	click Interface3 "/flexi-motion/api/FlexiMotion.Modifiers/IPostUpdate"
+	Type-.-&gt;Interface1["IOnValidate"]
+	click Interface1 "/flexi-motion/api/FlexiMotion/IOnValidate"
+	Type-.-&gt;Interface2["JobModifierGroup.IOnReEnable"]
+	click Interface2 "/flexi-motion/api/FlexiMotion.Modifiers/IOnReEnable"
+	Type-.-&gt;Interface3["JobModifierGroup.IPreUpdate"]
+	click Interface3 "/flexi-motion/api/FlexiMotion.Modifiers/IPreUpdate"
+	Type-.-&gt;Interface4["JobModifierGroup.IPostUpdate"]
+	click Interface4 "/flexi-motion/api/FlexiMotion.Modifiers/IPostUpdate"
 	Type["SimulationRootModifier"]
 class Type type-node
 
@@ -250,7 +253,7 @@ class Type type-node
 	<h1 id="Syntax">Syntax</h1>
 	<pre><code>[AddComponentMenu(FMStrings.ModifiersMenuPrefix + "Simulation Root Modifier")]
 [HelpURL(FMStrings.DocsURLs.ModifiersAPIDocumentation + "/" + nameof(SimulationRootModifier))]
-public class SimulationRootModifier : FlexiMotionModifier, IFlexiMotionModifier, 
+public class SimulationRootModifier : FlexiMotionModifier, IFlexiMotionModifier, IOnValidate, 
     JobModifierGroup.IOnReEnable, JobModifierGroup.IPreUpdate, JobModifierGroup.IPostUpdate</code></pre>
 
 

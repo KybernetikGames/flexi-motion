@@ -168,6 +168,7 @@
 				<li><a href="/flexi-motion/api/FlexiMotion/IComponent">IComponent</a></li>
 				<li><a href="/flexi-motion/api/FlexiMotion/ICopyable_1">ICopyable<wbr>&lt;T&gt;<wbr></a></li>
 				<li><a href="/flexi-motion/api/FlexiMotion/IFlexiMotionComponent">I<wbr>Flexi<wbr>Motion<wbr>Component</a></li>
+				<li><a href="/flexi-motion/api/FlexiMotion/IOnValidate">IOnValidate</a></li>
 				<li><a href="/flexi-motion/api/FlexiMotion/IValidatable">IValidatable</a></li>
 			<li class="header">Struct Types</li>
 				<li><a href="/flexi-motion/api/FlexiMotion/DirectionLength">DirectionLength</a></li>
@@ -214,6 +215,7 @@
 									<ul class="list-unstyled">
 											<li><a href="/flexi-motion/api/FlexiMotion/IFlexiMotionComponent">I<wbr>Flexi<wbr>Motion<wbr>Component</a></li>								
 											<li><a href="/flexi-motion/api/FlexiMotion/IComponent">IComponent</a></li>								
+											<li><a href="/flexi-motion/api/FlexiMotion/IOnValidate">IOnValidate</a></li>								
 									</ul>
 								</dd>
 							
@@ -235,6 +237,8 @@
 	click Interface0 "/flexi-motion/api/FlexiMotion/IFlexiMotionComponent"
 	Type-.-&gt;Interface1["IComponent"]
 	click Interface1 "/flexi-motion/api/FlexiMotion/IComponent"
+	Type-.-&gt;Interface2["IOnValidate"]
+	click Interface2 "/flexi-motion/api/FlexiMotion/IOnValidate"
 	Type["FlexiMotionComponent"]
 class Type type-node
 
@@ -247,7 +251,7 @@ class Type type-node
 	<h1 id="Syntax">Syntax</h1>
 	<pre><code>[AddComponentMenu(FMStrings.MenuPrefix + "FlexiMotion Component")]
 [HelpURL(FMStrings.DocsURLs.APIDocumentation + "/" + nameof(FlexiMotionComponent))]
-public class FlexiMotionComponent : MonoBehaviour, IFlexiMotionComponent, IComponent</code></pre>
+public class FlexiMotionComponent : MonoBehaviour, IFlexiMotionComponent, IComponent, IOnValidate</code></pre>
 
 
 

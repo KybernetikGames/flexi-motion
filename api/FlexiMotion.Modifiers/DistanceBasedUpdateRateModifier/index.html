@@ -207,6 +207,7 @@
 								<dd>
 									<ul class="list-unstyled">
 											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/IFlexiMotionModifier">IFlexiMotionModifier</a></li>								
+											<li><a href="/flexi-motion/api/FlexiMotion/IOnValidate">IOnValidate</a></li>								
 									</ul>
 								</dd>
 							
@@ -229,6 +230,8 @@
 	Base0--&gt;Base1["MonoBehaviour"]
 	Type-.-&gt;Interface0["IFlexiMotionModifier"]
 	click Interface0 "/flexi-motion/api/FlexiMotion.Modifiers/IFlexiMotionModifier"
+	Type-.-&gt;Interface1["IOnValidate"]
+	click Interface1 "/flexi-motion/api/FlexiMotion/IOnValidate"
 	Type["DistanceBasedUpdateRateModifier"]
 class Type type-node
 
@@ -242,7 +245,8 @@ class Type type-node
 	<pre><code>[AddComponentMenu(FMStrings.ModifiersMenuPrefix + "Distance Based Update Rate Modifier")]
 [HelpURL(FMStrings.DocsURLs.ModifiersAPIDocumentation + "/" + nameof(DistanceBasedUpdateRateModifier))]
 [DefaultExecutionOrder(-1000)]
-public class DistanceBasedUpdateRateModifier : FlexiMotionModifier, IFlexiMotionModifier</code></pre>
+public class DistanceBasedUpdateRateModifier : FlexiMotionModifier, IFlexiMotionModifier, 
+    IOnValidate</code></pre>
 
 
 

@@ -187,6 +187,12 @@
 								<dt>Namespace</dt>
 								<dd><a href="/flexi-motion/api/FlexiMotion.Samples">FlexiMotion<wbr>.Samples</a></dd>
 											
+								<dt>Interfaces</dt>
+								<dd>
+									<ul class="list-unstyled">
+											<li><a href="/flexi-motion/api/FlexiMotion/IOnValidate">IOnValidate</a></li>								
+									</ul>
+								</dd>
 							
 								<dt>Base Types</dt>
 								<dd>
@@ -202,6 +208,8 @@
 						<div class="mermaid">
 							graph BT
 	Type--&gt;Base0["MonoBehaviour"]
+	Type-.-&gt;Interface0["IOnValidate"]
+	click Interface0 "/flexi-motion/api/FlexiMotion/IOnValidate"
 	Type["AverageFrameRateBenchmark"]
 class Type type-node
 
@@ -214,7 +222,7 @@ class Type type-node
 	<h1 id="Syntax">Syntax</h1>
 	<pre><code>[AddComponentMenu(FMStrings.SamplesMenuPrefix + "Average Frame Rate Benchmark")]
 [HelpURL(FMStrings.DocsURLs.SamplesAPIDocumentation + "/" + nameof(AverageFrameRateBenchmark))]
-public class AverageFrameRateBenchmark : MonoBehaviour</code></pre>
+public class AverageFrameRateBenchmark : MonoBehaviour, IOnValidate</code></pre>
 
 
 

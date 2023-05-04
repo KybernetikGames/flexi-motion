@@ -204,6 +204,7 @@
 								<dd>
 									<ul class="list-unstyled">
 											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/IFlexiMotionModifier">IFlexiMotionModifier</a></li>								
+											<li><a href="/flexi-motion/api/FlexiMotion/IOnValidate">IOnValidate</a></li>								
 											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/IOnInitialize">JobModifierGroup<wbr>.IOnInitialize</a></li>								
 											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/IPreUpdate">JobModifierGroup<wbr>.IPreUpdate</a></li>								
 									</ul>
@@ -228,10 +229,12 @@
 	Base0--&gt;Base1["MonoBehaviour"]
 	Type-.-&gt;Interface0["IFlexiMotionModifier"]
 	click Interface0 "/flexi-motion/api/FlexiMotion.Modifiers/IFlexiMotionModifier"
-	Type-.-&gt;Interface1["JobModifierGroup.IOnInitialize"]
-	click Interface1 "/flexi-motion/api/FlexiMotion.Modifiers/IOnInitialize"
-	Type-.-&gt;Interface2["JobModifierGroup.IPreUpdate"]
-	click Interface2 "/flexi-motion/api/FlexiMotion.Modifiers/IPreUpdate"
+	Type-.-&gt;Interface1["IOnValidate"]
+	click Interface1 "/flexi-motion/api/FlexiMotion/IOnValidate"
+	Type-.-&gt;Interface2["JobModifierGroup.IOnInitialize"]
+	click Interface2 "/flexi-motion/api/FlexiMotion.Modifiers/IOnInitialize"
+	Type-.-&gt;Interface3["JobModifierGroup.IPreUpdate"]
+	click Interface3 "/flexi-motion/api/FlexiMotion.Modifiers/IPreUpdate"
 	Type["ScaleModifier"]
 class Type type-node
 
@@ -245,7 +248,7 @@ class Type type-node
 	<pre><code>[AddComponentMenu(FMStrings.ModifiersMenuPrefix + "Scale Modifier")]
 [HelpURL(FMStrings.DocsURLs.ModifiersAPIDocumentation + "/" + nameof(ScaleModifier))]
 [DefaultExecutionOrder(1000)]
-public class ScaleModifier : FlexiMotionModifier, IFlexiMotionModifier, 
+public class ScaleModifier : FlexiMotionModifier, IFlexiMotionModifier, IOnValidate, 
     JobModifierGroup.IOnInitialize, JobModifierGroup.IPreUpdate</code></pre>
 
 

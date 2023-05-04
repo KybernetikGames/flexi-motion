@@ -209,6 +209,7 @@
 											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/IOnUpdate">JobModifierGroup<wbr>.IOnUpdate</a></li>								
 											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/ISphereCollidersModifier">I<wbr>Sphere<wbr>Colliders<wbr>Modifier</a></li>								
 											<li><a href="/flexi-motion/api/FlexiMotion/IComponent">IComponent</a></li>								
+											<li><a href="/flexi-motion/api/FlexiMotion/IOnValidate">IOnValidate</a></li>								
 									</ul>
 								</dd>
 							
@@ -241,6 +242,8 @@
 	click Interface4 "/flexi-motion/api/FlexiMotion.Modifiers/ISphereCollidersModifier"
 	Type-.-&gt;Interface5["IComponent"]
 	click Interface5 "/flexi-motion/api/FlexiMotion/IComponent"
+	Type-.-&gt;Interface6["IOnValidate"]
+	click Interface6 "/flexi-motion/api/FlexiMotion/IOnValidate"
 	Type["SphereCollidersModifier"]
 class Type type-node
 
@@ -255,7 +258,7 @@ class Type type-node
 [HelpURL(FMStrings.DocsURLs.ModifiersAPIDocumentation + "/" + nameof(SphereCollidersModifier))]
 public class SphereCollidersModifier : FlexiMotionModifier, IFlexiMotionModifier, 
     JobModifierGroup.IOnInitialize, JobModifierGroup.IPreUpdate, JobModifierGroup.IOnUpdate, 
-    ISphereCollidersModifier, IComponent</code></pre>
+    ISphereCollidersModifier, IComponent, IOnValidate</code></pre>
 
 
 

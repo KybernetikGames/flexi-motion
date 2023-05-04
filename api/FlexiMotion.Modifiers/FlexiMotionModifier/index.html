@@ -205,6 +205,7 @@
 								<dd>
 									<ul class="list-unstyled">
 											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/IFlexiMotionModifier">IFlexiMotionModifier</a></li>								
+											<li><a href="/flexi-motion/api/FlexiMotion/IOnValidate">IOnValidate</a></li>								
 									</ul>
 								</dd>
 							
@@ -218,12 +219,12 @@
 								<dt>Derived Types</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/SimulationRootModifier">Simulation<wbr>Root<wbr>Modifier</a></li>								
 											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/AccelerationModifier">AccelerationModifier</a></li>								
-											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/SphereCollidersModifier">Sphere<wbr>Colliders<wbr>Modifier</a></li>								
 											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/DistanceBasedUpdateRateModifier">Distance<wbr>Based<wbr>Update<wbr>Rate<wbr>Modifier</a></li>								
-											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/PreWarmModifier">PreWarmModifier</a></li>								
 											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/ScaleModifier">ScaleModifier</a></li>								
+											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/SphereCollidersModifier">Sphere<wbr>Colliders<wbr>Modifier</a></li>								
+											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/SimulationRootModifier">Simulation<wbr>Root<wbr>Modifier</a></li>								
+											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/PreWarmModifier">PreWarmModifier</a></li>								
 									</ul>
 								</dd>			
 							
@@ -235,20 +236,22 @@
 	Type--&gt;Base0["MonoBehaviour"]
 	Type-.-&gt;Interface0["IFlexiMotionModifier"]
 	click Interface0 "/flexi-motion/api/FlexiMotion.Modifiers/IFlexiMotionModifier"
+	Type-.-&gt;Interface1["IOnValidate"]
+	click Interface1 "/flexi-motion/api/FlexiMotion/IOnValidate"
 	Type["FlexiMotionModifier"]
 class Type type-node
-	Derived0["SimulationRootModifier"]--&gt;Type
-	click Derived0 "/flexi-motion/api/FlexiMotion.Modifiers/SimulationRootModifier"
-	Derived1["AccelerationModifier"]--&gt;Type
-	click Derived1 "/flexi-motion/api/FlexiMotion.Modifiers/AccelerationModifier"
-	Derived2["SphereCollidersModifier"]--&gt;Type
-	click Derived2 "/flexi-motion/api/FlexiMotion.Modifiers/SphereCollidersModifier"
-	Derived3["DistanceBasedUpdateRateModifier"]--&gt;Type
-	click Derived3 "/flexi-motion/api/FlexiMotion.Modifiers/DistanceBasedUpdateRateModifier"
-	Derived4["PreWarmModifier"]--&gt;Type
-	click Derived4 "/flexi-motion/api/FlexiMotion.Modifiers/PreWarmModifier"
-	Derived5["ScaleModifier"]--&gt;Type
-	click Derived5 "/flexi-motion/api/FlexiMotion.Modifiers/ScaleModifier"
+	Derived0["AccelerationModifier"]--&gt;Type
+	click Derived0 "/flexi-motion/api/FlexiMotion.Modifiers/AccelerationModifier"
+	Derived1["DistanceBasedUpdateRateModifier"]--&gt;Type
+	click Derived1 "/flexi-motion/api/FlexiMotion.Modifiers/DistanceBasedUpdateRateModifier"
+	Derived2["ScaleModifier"]--&gt;Type
+	click Derived2 "/flexi-motion/api/FlexiMotion.Modifiers/ScaleModifier"
+	Derived3["SphereCollidersModifier"]--&gt;Type
+	click Derived3 "/flexi-motion/api/FlexiMotion.Modifiers/SphereCollidersModifier"
+	Derived4["SimulationRootModifier"]--&gt;Type
+	click Derived4 "/flexi-motion/api/FlexiMotion.Modifiers/SimulationRootModifier"
+	Derived5["PreWarmModifier"]--&gt;Type
+	click Derived5 "/flexi-motion/api/FlexiMotion.Modifiers/PreWarmModifier"
 
 						</div>
 					</div>
@@ -258,7 +261,7 @@ class Type type-node
 
 	<h1 id="Syntax">Syntax</h1>
 	<pre><code>[HelpURL(FMStrings.DocsURLs.ModifiersAPIDocumentation + "/" + nameof(FlexiMotionModifier))]
-public abstract class FlexiMotionModifier : MonoBehaviour, IFlexiMotionModifier</code></pre>
+public abstract class FlexiMotionModifier : MonoBehaviour, IFlexiMotionModifier, IOnValidate</code></pre>
 
 
 	<h1 id="Remarks">Remarks</h1>

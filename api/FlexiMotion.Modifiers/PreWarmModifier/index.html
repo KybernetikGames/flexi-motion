@@ -204,6 +204,7 @@
 								<dd>
 									<ul class="list-unstyled">
 											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/IFlexiMotionModifier">IFlexiMotionModifier</a></li>								
+											<li><a href="/flexi-motion/api/FlexiMotion/IOnValidate">IOnValidate</a></li>								
 											<li><a href="/flexi-motion/api/FlexiMotion.Modifiers/IOnInitialize">JobModifierGroup<wbr>.IOnInitialize</a></li>								
 									</ul>
 								</dd>
@@ -227,8 +228,10 @@
 	Base0--&gt;Base1["MonoBehaviour"]
 	Type-.-&gt;Interface0["IFlexiMotionModifier"]
 	click Interface0 "/flexi-motion/api/FlexiMotion.Modifiers/IFlexiMotionModifier"
-	Type-.-&gt;Interface1["JobModifierGroup.IOnInitialize"]
-	click Interface1 "/flexi-motion/api/FlexiMotion.Modifiers/IOnInitialize"
+	Type-.-&gt;Interface1["IOnValidate"]
+	click Interface1 "/flexi-motion/api/FlexiMotion/IOnValidate"
+	Type-.-&gt;Interface2["JobModifierGroup.IOnInitialize"]
+	click Interface2 "/flexi-motion/api/FlexiMotion.Modifiers/IOnInitialize"
 	Type["PreWarmModifier"]
 class Type type-node
 
@@ -242,7 +245,7 @@ class Type type-node
 	<pre><code>[AddComponentMenu(FMStrings.ModifiersMenuPrefix + "Pre-Warm Modifier")]
 [HelpURL(FMStrings.DocsURLs.ModifiersAPIDocumentation + "/" + nameof(PreWarmModifier))]
 [DefaultExecutionOrder(ExecutionTime)]
-public class PreWarmModifier : FlexiMotionModifier, IFlexiMotionModifier, 
+public class PreWarmModifier : FlexiMotionModifier, IFlexiMotionModifier, IOnValidate, 
     JobModifierGroup.IOnInitialize</code></pre>
 
 
